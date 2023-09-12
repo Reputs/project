@@ -1,0 +1,253 @@
+header,
+footer {
+    background-color: #000000;
+    padding: 10px;
+}
+.text{
+    color:#ffffff ;
+}
+main {
+    padding: 10px;
+    background-color: silver;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+}
+
+.post img {
+    margin: 20px;
+}
+
+.footer-columns {
+    display: flex;
+}
+
+.footer-column {
+    flex: 50%;
+    margin: 20px;
+}
+
+.post-info {
+    color: grey;
+}
+
+.comment {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.author {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: silver;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#sub-comment {
+    margin-left: 40px;
+}
+
+#menu1 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+#menu1 ul {
+    position: relative;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    list-style: none;
+}
+
+#menu1>ul::after {
+    display: block;
+    width: 100%;
+    height: 0px;
+    clear: both;
+    content: " ";
+}
+
+#menu1 ul li {
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+#menu1 ul li a {
+    display: block;
+    padding: 9px 25px 0px 25px;
+    font-size: 14px;
+    line-height: 1.3em;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 36px;
+    box-sizing: border-box;
+    color: white;
+}
+
+#menu1 ul li ul {
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    display: none;
+    width: 200px;
+    background: #38bfff;
+}
+
+#menu1 ul li:hover ul {
+    display: block;
+}
+
+#menu1 ul li ul li {
+    float: none;
+    width: 100%;
+}
+
+#menu1 ul li ul li a {
+    display: block;
+    text-transform: none;
+    height: auto;
+    padding: 7px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #ffffff;
+    color: white;
+}
+
+#menu1 ul li ul li:first-child a {
+    border-top: 0px;
+}
+
+
+/* Стилі для слайдера */
+
+.carousele {
+    margin: 10px;
+}
+
+.carousele div img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.carousele-menu{
+    
+    display: flex ;
+    justify-content: center;
+ 
+    
+     
+ }
+ .carousele-menu1{
+    
+    display: flex ;
+    justify-content: center;
+  color: orangered;
+    
+     
+ }
+ .carousele-menu2{
+    
+    display: flex ;
+    justify-content: center;
+  color: yellow;
+    
+     
+ }
+ 
+ .dark {
+    background: #da1f1f;
+    float: left;
+    width: 50%;
+    height: 250px;
+        display: flex;
+    justify-content: center;
+  }
+  .light {
+    background: #89e7e7;
+    float: right;
+    width: 50%;
+    height: 250px;
+        display: flex;
+    justify-content: center;
+  }
+  /*тут мав бути текст для заміни фону на зображення але потім я перехтів бо воно мені не подoбається*/
+
+
+  .button:hover {
+    border: 2px solid transparent; /* Прозоре обрамлення при наведенні */
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: 2px solid transparent;
+    margin: 0 10px;
+    transition: transform 0.3s, border-radius 0.3s; /* Додали анімацію для border-radius */
+}
+
+.button.button1 {
+    color: #fff;
+    border-color: #ff0015; /* Колір обрамлення для кнопки 1 */
+    background-color: #ff0015;
+    border-radius : 1px;
+}
+
+.button.button2 {
+    color: #fff;
+    border-color: #52e8f3; /* Колір обрамлення для кнопки 2 */
+    background-color: #52e8f3; /* Колір фону тексту кнопки 2 */
+    border-radius: 1px;
+  
+}
+
+.button:hover {
+    border: 2px solid transparent; /* Прозоре обрамлення при наведенні */
+}
+.button-container:hover {
+    justify-content: center; /* Вирівнювання по центру при наведенні на контейнер */
+}
+.button.button1:hover {
+    transform: scale(1.2);
+    border-radius: 5px;
+}
+
+.button.button2:hover {
+    transform: scale(0.8) ;
+    border-radius: 45px;
+}
